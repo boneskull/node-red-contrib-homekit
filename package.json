@@ -1,14 +1,11 @@
 {
-    "name": "node-red-contrib-homekit",
-    "version": "0.2.1",
+    "name": "@boneskull/node-red-contrib-homekit",
+    "version": "1.0.0",
     "description": "Node-RED nodes to simulate Apple HomeKit devices",
     "main": "homekit.js",
-    "scripts": {
-        "test": "test"
-    },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/mschm/node-red-contrib-homekit.git"
+        "url": "git+https://github.com/boneskull/node-red-contrib-homekit.git"
     },
     "keywords": [
         "homekit",
@@ -24,10 +21,10 @@
     "author": "Marius Schmeding",
     "license": "Apache-2.0",
     "bugs": {
-        "url": "https://github.com/mschm/node-red-contrib-homekit/issues"
+        "url": "https://github.com/boneskull/node-red-contrib-homekit/issues"
     },
-    "homepage": "https://github.com/mschm/node-red-contrib-homekit#readme",
+    "homepage": "https://github.com/boneskull/node-red-contrib-homekit#readme",
     "dependencies": {
-        "hap-nodejs": "^0.4.27"
+        "hap-nodejs": "^0.4.41"
     }
 }
