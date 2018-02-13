@@ -46,12 +46,7 @@ module.exports = function (RED) {
     this.published = false
 
     this.on('close', function (removed, done) {
-      if (removed) {
-        // This node has been deleted
-        accessory.destroy()
-      } else {
-        // This node is being restarted
-      }
+      accessory.destroy()
       done()
     })
 
@@ -145,9 +140,8 @@ module.exports = function (RED) {
       if (removed) {
         // This node has been deleted
         accessory.removeService(service)
-      } else {
-        // This node is being restarted
       }
+      accessory.destroy()
       done()
     })
   }
