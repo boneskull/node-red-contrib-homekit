@@ -131,7 +131,7 @@ module.exports = function (RED) {
           // characteristic is not supported
           node.warn('Characteristic ' + key + ' cannot be written.\nTry one of these: ' + supported.write.join(', '))
         } else {
-          service.setCharacteristic(Characteristic[key], (msg.payload[key]))
+          service.getCharacteristic(Characteristic[key]).updateValue(msg.payload[key])
         }
       })
     })
